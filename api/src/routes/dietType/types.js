@@ -13,7 +13,7 @@ router.get("/", async (req, res) => {
       });
       let final = types.flat();
       console.log('estoy intentando ')
-      final = final.forEach((e) => {
+      final.forEach((e) => {
         DietType.findOrCreate({
           where: { name: e },
         });
