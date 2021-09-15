@@ -18,12 +18,16 @@ module.exports = (sequelize) => {
       type: DataTypes.TEXT,
       allowNull: false,
     },
+    img:{
+      type: DataTypes.TEXT,
+      allowNull:false
+    },
     score:{
-      type:DataTypes.FLOAT,
+      type:DataTypes.INTEGER,
       allowNull:true,
     },
     scoreHealtyFood:{
-        type: DataTypes.FLOAT,
+        type: DataTypes.INTEGER,
         allowNull: true,
     },
     steps:{

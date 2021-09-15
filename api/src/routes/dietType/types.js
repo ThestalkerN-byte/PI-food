@@ -1,18 +1,18 @@
+require('dotenv').config();
 const express = require("express");
 const axios = require("axios");
 const router = express.Router();
-const {Recipe, DietType} = require('../../db')
+const {DietType} = require('../../db')
+const{
+  API_KEY
+}=process.env
 
 router.get("/", async (req, res) => {
- 
-
-      const typesApi = await axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=acea5c78b9c24045bd70de9cbf7df12d&number=100&addRecipeInformation=true`)
-      console.log(typesApi.data)
+      const typesApi = await axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&number=100&addRecipeInformation=true`)
       const types = await typesApi.data.results.map((result) => {
-        return result.diets;
+        return result.diets; 
       });
       let final = types.flat();
-      console.log('estoy intentando ')
       final.forEach((e) => {
         DietType.findOrCreate({
           where: { name: e },

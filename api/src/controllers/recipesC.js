@@ -1,10 +1,13 @@
+require('dotenv').config();
 const {Recipe,DietType} = require('../db')
 const axios = require('axios')
-
+const{
+    API_KEY
+}=process.env
 
  const getRecipesApiData = async () => {
   const allRecipes = await axios.get(
-    `https://api.spoonacular.com/recipes/complexSearch?apiKey=acea5c78b9c24045bd70de9cbf7df12d&number=100&addRecipeInformation=true`
+    `https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&number=100&addRecipeInformation=true`
   );
   const recipesProps = await allRecipes.data.results
   return recipesProps;
@@ -19,7 +22,6 @@ const axios = require('axios')
             through:{
                 attributes: [],
             }
-            
         }
     })
 }
@@ -28,7 +30,7 @@ const axios = require('axios')
     const apiData = await getRecipesApiData();
     const dbData = await getDbRecipesData();
     const allRecipesData = apiData.concat(dbData)
-    return allRecipesData
+    return allRecipesData;
 }
 
 

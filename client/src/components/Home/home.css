@@ -1,0 +1,38 @@
+.big-papa{
+    background-color: #444444;
+}
+
+.select{
+
+    cursor: pointer;
+    margin-top: 10px;
+    padding-right: 15px;
+    width: 150px;
+    border-radius: 18px;
+    outline: none;
+}
+
+.cotenedor-del-map{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-left: 15px
+}
+.selects{
+   
+    display: inline-flex;
+    margin-left: 30%;
+}
+.filter{
+    padding-right: 55px;
+}
+.filter label{
+    color: white;
+    padding-right: 15px;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+.paginado{
+    position: relative;
+    
+}

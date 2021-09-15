@@ -1,0 +1,104 @@
+
+.card {
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 270px 270px 80px;
+  grid-auto-rows: minmax(140px,auto);
+
+
+
+  width: 350px;
+  margin-top:35px;
+  border-radius: 18px;
+  background: #FEFBF3;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  font-family: roboto;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.card:hover{
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+.title-bx{
+  height: 100px;
+}
+.contentBx h2{
+ font-family: 'Mukta',sans-serif;
+ line-height: 24px;
+}
+.imgBx  img{
+  align-self: start;
+  width:-webkit-fill-available;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+.puntaje h4{
+  font-family: 'Mukta',sans-serif;
+  
+}
+.button-see{
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Mukta', sans-serif;
+  color: black;
+  font-weight: 200;
+  position: relative;
+  width: 160px;
+  height: 20px;
+  padding: 5px 30px;
+  border: 2px solid #000;
+  margin-top: 250px;
+}
+.button-see:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #fddb3a;
+  transition: all 0.3s ease;
+}
+.button-see:hover {
+  color: #000;
+}
+.button-see:hover:after {
+  top: auto;
+  bottom: 0;
+  height: 100%;
+}
+.button-see:active {
+  top: 2px;
+}
+.size{
+  /* border: solid green 2px; */
+  height: 100px;
+  width: 100%;
+  display: inline-block;
+}
+.diets{
+  display: inline-block;
+  padding: 2px 8px 1px 8px;
+  margin-right: 5px;
+  margin-top: 2px;
+  background: #e0e5ec;
+  font-family: 'Mukta', sans-serif;
+}
+.botton-section{
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.score{
+  color:#fddb3a;
+  display: inline-block;
+  margin-left: 75px;
+}
+.score h4{
+  color: black;
+}

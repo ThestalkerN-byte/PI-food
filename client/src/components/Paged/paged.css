@@ -1,0 +1,22 @@
+ul.pagination {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.listado{
+    display: flex;
+    flex-direction: row;
+   
+}
+.elementos{
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #d1d1d1f5;
+    border-radius: 10px;
+}
+.elementos:hover{
+    box-shadow: rgba(221, 215, 41, 0.652) 0px 5px 15px;
+}
