@@ -28,10 +28,10 @@ export default function Home() {
     setActualPage(numberPage);
   };
 
-  // useEffect(() => {
-  //   dispatch(getDietType());
-  //   dispatch(getRecipes());
-  // }, [dispatch]);
+  useEffect(() => {
+    dispatch(getDietType());
+    dispatch(getRecipes());
+  }, [dispatch]);
 
   function handleFilterDietType(e) {
     dispatch(filterByDietType(e.target.value));

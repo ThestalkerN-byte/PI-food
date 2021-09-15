@@ -42,7 +42,7 @@ button:after {
   transition: all 0.3s ease;
 }
 button:hover {
-  color: #000;
+  background: #fddb3a;
 }
 button:hover:after {
   top: auto;

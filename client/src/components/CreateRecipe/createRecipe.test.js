@@ -1,9 +1,8 @@
 import React from "react";
-import { configure, shallow, mount } from "enzyme";
+import { configure, shallow, } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import { CreateRecipe } from "./createRecipe";
-import configureStore from "redux-mock-store";
-import AddTodoDefault, { AddTodo } from "./AddTodo.js";
+
 
 configure({ adapter: new Adapter() });
 
@@ -18,7 +17,7 @@ describe("<CreateRecipe />", () => {
     });
 
     it('Renderiza un label con el texto igual a "Name"', () => {
-      // El orden en el que se encuentran los Labels es importante.
+    
       expect(wrapper.find("label").at(0).text()).toEqual("Name");
     });
 
@@ -27,7 +26,7 @@ describe("<CreateRecipe />", () => {
     });
 
     it('Renderiza un label con el texto igual a "Resume"', () => {
-      // El orden en el que se encuentran los Labels es importante.
+    
       expect(wrapper.find("label").at(1).text()).toEqual("Resume");
     });
 
@@ -36,7 +35,7 @@ describe("<CreateRecipe />", () => {
     });
 
     it('Renderiza un label con el texto igual a "Image"', () => {
-      // El orden en el que se encuentran los Labels es importante.
+    
       expect(wrapper.find("label").at(2).text()).toEqual("Image");
     });
 
@@ -45,7 +44,7 @@ describe("<CreateRecipe />", () => {
     });
 
     it('Renderiza un label con el texto igual a "Score"', () => {
-      // El orden en el que se encuentran los Labels es importante.
+
       expect(wrapper.find("label").at(3).text()).toEqual("Score");
     });
 

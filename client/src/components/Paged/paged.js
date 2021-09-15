@@ -3,8 +3,8 @@ import "./paged.css";
 
 export default function Paginado({ recipesPerPage, allRecipes, paginado }) {
   const numberPage = [];
-  for (let i = 0; i <= Math.ceil(allRecipes/recipesPerPage); i++) {
-    numberPage.push(i + 1);
+  for (let i = 1; i <= Math.ceil(allRecipes/recipesPerPage); i++) {
+    numberPage.push(i);
   }
   return (
     <div className="paged-box" > 

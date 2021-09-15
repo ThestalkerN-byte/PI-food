@@ -7,10 +7,7 @@ import { getDietType, getRecipes } from "../../actions";
 export function LandingPage() {
  const dispatch = useDispatch()
 
-  useEffect(() => {
-    dispatch(getDietType());
-    dispatch(getRecipes());
-  }, [dispatch]);
+ 
   return (
     <div className="container">
       <div className = "button-landing">

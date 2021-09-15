@@ -37,7 +37,7 @@ export default function CreateRecipe() {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(postRecipe(data));
-    alert("Personaje creado");
+    alert("Receta creada");
     setData({
       name: "",
       resume: "",
