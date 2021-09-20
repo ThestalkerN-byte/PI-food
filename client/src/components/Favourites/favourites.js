@@ -12,7 +12,7 @@ export default function Favourites() {
           return (
             <Card
               key={el.id}
-              id={el.id}
+              id={console.log(el)}
               score={el.healthScore ? el.healthScore : el.score}
               name={el.title ? el.title : el.name}
               image={el.img ? el.img : el.image}

@@ -20,7 +20,7 @@ module.exports = (sequelize) => {
     },
     img:{
       type: DataTypes.TEXT,
-      allowNull:false,
+      allowNull:true,
     },
     score:{
       type:DataTypes.INTEGER,

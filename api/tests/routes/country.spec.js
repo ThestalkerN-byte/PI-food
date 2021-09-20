@@ -27,6 +27,7 @@ describe("Recipe routes", () => {
 const recipe2 = {
   name: "Fideos con tuco",
   resume: "asd",
+  img: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.recetasgratis.net%2Freceta-de-fideos-a-la-olla-delicioso-9611.html&psig=AOvVaw29eLEfzqTM29GxWGQlTZWN&ust=1631797465054000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMC58ZuHgfMCFQAAAAAdAAAAABAD"
 };
 describe("Recipe routes", () => {
   before(() =>

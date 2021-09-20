@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.post("/", async (req, res) => {
   let { name, resume, score, scoreHealtyFood, steps, createdIndb,dietType,img} = req.body;
-  console.log('este es el body',req.body)
+
   let recipeCreated = await Recipe.create({
     name:name,
     resume:resume,
